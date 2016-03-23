@@ -32,7 +32,7 @@ export default {
     loaders: [{
       test: /\.(js)$/,
       exclude: /node_modules|lib/,
-      loader: 'babel?' + JSON.stringify({presets: ['react', 'es2015']}),
+      loader: 'babel?' + JSON.stringify({presets: ['react', 'es2016']}),
       include: require('path').join(__dirname, './src')
     },
     {
