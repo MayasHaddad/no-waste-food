@@ -21,49 +21,49 @@ const styles = {
 const tilesData = [
   {
     img: 'src/images/img1.jpg',
-    title: 'Breakfast',
-    author: 'jill111'
+    title: 'Burgers',
+    author: 'Burger Prince'
   },
   {
     img: 'src/images/img2.jpg',
-    title: 'Tasty burger',
-    author: 'pashminu'
+    title: 'Pancakes',
+    author: 'Tasty Co.'
   },
   {
     img: 'src/images/img3.jpg',
-    title: 'Camera',
-    author: 'Danson67'
+    title: 'Tagliatelle',
+    author: 'Pasta Co.'
   },
   {
     img: 'src/images/img4.jpg',
-    title: 'Morning',
-    author: 'fancycrave1'
+    title: 'Sandwich',
+    author: 'Fast Sandwiches'
   },
   {
     img: 'src/images/img5.jpg',
-    title: 'Hats',
-    author: 'Hans'
+    title: 'Viennoiseries',
+    author: 'Café'
   },
   {
     img: 'src/images/img6.jpg',
-    title: 'Honey',
-    author: 'fancycravel'
+    title: 'Fish',
+    author: 'Happy Fish'
   },
   {
     img: 'src/images/img7.jpg',
-    title: 'Vegetables',
-    author: 'jill111'
+    title: 'Meat',
+    author: 'Boucherie'
   },
   {
     img: 'src/images/img8.jpg',
-    title: 'Water plant',
-    author: 'BkrmadtyaKarki'
+    title: 'Vegetables',
+    author: 'Vergers du coin'
   }
 ]
 
 const FoodGridList = () => (
   <div style={styles.root}>
-    <GridList cellHeight={400} style={styles.gridList}>
+    <GridList cellHeight={300} style={styles.gridList}>
       {tilesData.map((tile) => (
         <GridTile
           key={tile.img}
