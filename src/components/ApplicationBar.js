@@ -1,8 +1,14 @@
 import React from 'react'
 import AppBar from 'material-ui/lib/app-bar'
+import * as actionTypes from '../actions'
 
-const ApplicationBar = () => (
-  <AppBar title='NO FOOD WASTE' iconClassNameRight='muidocs-icon-navigation-expand-more' />
-)
+export default class ApplicationBar extends React.Component {
+  constructor (props) {
+    super(props)
+    this.props = props
+  }
 
-export default ApplicationBar
+  render () {
+    return <AppBar onLeftIconButtonTouchTap={() => this.props.store.dispatch({type: actionTypes.TOGGLE_SIDENAV})} title='NO FOOD WASTE' iconClassNameRight='muidocs-icon-navigation-expand-more' />
+  }
+}

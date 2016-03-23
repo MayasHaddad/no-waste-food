@@ -1,7 +1,6 @@
 import React from 'react'
 import LeftNav from 'material-ui/lib/left-nav'
 import AppBar from 'material-ui/lib/app-bar'
-import RaisedButton from 'material-ui/lib/raised-button'
 
 export default class SideNavigation extends React.Component {
 
@@ -11,6 +10,10 @@ export default class SideNavigation extends React.Component {
     this.handleToggle = this.handleToggle.bind(this)
   }
 
+  componentDidMount () {
+    this.props.store.subscribe(this.handleToggle)
+  }
+
   handleToggle () {
     this.setState({open: !this.state.open})
   }
@@ -18,7 +21,6 @@ export default class SideNavigation extends React.Component {
   render () {
     return (
       <div>
-        <RaisedButton label='Toggle LeftNav' onTouchTap={this.handleToggle} />
         <LeftNav width={200} openRight open={this.state.open}>
           <AppBar title='AppBar' />
         </LeftNav>
