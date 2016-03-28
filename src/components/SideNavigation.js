@@ -1,6 +1,6 @@
 import React from 'react'
 import LeftNav from 'material-ui/lib/left-nav'
-import AppBar from 'material-ui/lib/app-bar'
+import SideNavMenuList from './SideNavMenuList'
 
 export default class SideNavigation extends React.Component {
 
@@ -21,8 +21,8 @@ export default class SideNavigation extends React.Component {
   render () {
     return (
       <div>
-        <LeftNav width={200} openRight open={this.state.open}>
-          <AppBar title='AppBar' />
+        <LeftNav width={200} openRight open={this.state.open} >
+          <SideNavMenuList />
         </LeftNav>
       </div>
     )
