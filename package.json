@@ -4,7 +4,8 @@
   "description": "don't waste food",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "./deploy-ghpages.sh"
   },
   "repository": {
     "type": "git",

@@ -1,0 +1,10 @@
+language: node_js
+node_js:
+  - "4.1.1"
+before_install: npm install -g webpack
+install: npm install
+script: webpack -p && chmod +x ./deploy-ghpages.sh && npm run deploy
+env:
+    global:
+    - GH_REF: github.com/MayasHaddad/no-waste-food.git
+    - secure: bPN3Yds3OGdbtO7BnfV7SF58nqwY5cG3CRhS99/7UeZGVTx54p5drAnz0iuLQaNjWEsDaU6VRQCkgwjKY2/a62INk79w8NSumQ+jE1AWTJg0KRQ8Y4P1ZooeR1cZo9JUQTSCbe9ZgFavkGss7j5g4uCDcE5mkal2ijcBPD/onT5MQafBdZflim/yS37JsvmtavYLH8eUJg9QxZwuBZN5cfTTstpPlKynFos3WArgOnM7RweOZ3aF0Ih9+d1NYogKWB6jXM2PXeqLJ+COFdCSt94qoN2QvILO1pQ+hgh18UgQd90+lzR0xIIIE93RiD2PQQ8jUlDcmCmaMgq0w1KJakJso6fl0gmLc4+9EFR3m0w76yVlQRAlkOtLdX7jADqcfD4TeL1wJpyOkEwiwXZmT5fy0GRUwduPz6tOnTMClwrlYNEyWX9mFTZVgroYAk+BV0dkKoOasTb5ksOxd6LE/0hL3KVEn1beZgJhRuoU85ffxX5hIp2lmKQs9IiqICj2w9zgsJE2ZAzVGjVzxicrOIu5KLkglZHuSC5SRDHrX758niTXa5VtVgsviR7DjffChqiIHo8qe8p5yon7oXLQ/R6q3Q4gqn0hfruw95l3sPOmwjG94mB2WxcmhQJc/X6wVBgkpVvZwR42PlB/jEtt/+FjuUF40Kzc1M2UFPNOU9U=
