@@ -18,44 +18,45 @@ const styles = {
   }
 }
 
+const imagesURL = 'https://raw.githubusercontent.com/MayasHaddad/no-waste-food/master/'
 const tilesData = [
   {
-    img: 'src/images/img1.jpg',
+    img: imagesURL + 'src/images/img1.jpg',
     title: 'Burgers',
     author: 'Burger Prince'
   },
   {
-    img: 'src/images/img2.jpg',
+    img: imagesURL + 'src/images/img2.jpg',
     title: 'Pancakes',
     author: 'Tasty Co.'
   },
   {
-    img: 'src/images/img3.jpg',
+    img: imagesURL + 'src/images/img3.jpg',
     title: 'Tagliatelle',
     author: 'Pasta Co.'
   },
   {
-    img: 'src/images/img4.jpg',
+    img: imagesURL + 'src/images/img4.jpg',
     title: 'Sandwich',
     author: 'Fast Sandwiches'
   },
   {
-    img: 'src/images/img5.jpg',
+    img: imagesURL + 'src/images/img5.jpg',
     title: 'Viennoiseries',
     author: 'Café'
   },
   {
-    img: 'src/images/img6.jpg',
+    img: imagesURL + 'src/images/img6.jpg',
     title: 'Fish',
     author: 'Happy Fish'
   },
   {
-    img: 'src/images/img7.jpg',
+    img: imagesURL + 'src/images/img7.jpg',
     title: 'Meat',
     author: 'Boucherie'
   },
   {
-    img: 'src/images/img8.jpg',
+    img: imagesURL + 'src/images/img8.jpg',
     title: 'Vegetables',
     author: 'Vergers du coin'
   }
